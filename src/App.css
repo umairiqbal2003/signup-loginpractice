@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-container{
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-size: 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-container > div ul  {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding-right: 30px;
+  list-style: none;
+  
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar-container > div ul a{
+  text-decoration: none;
+  color: white;
+  
+}
+.navbar-container > div ul a:hover{
+  padding: 10px;
+  background-color: grey;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+.form-container{
+  
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 30px;
+  box-shadow: 30px;
+  
+  
 }
-
-.App-link {
-  color: #61dafb;
+.form-input > input{
+ padding: 5px 15px;
+ margin: 10px;
+ border-radius: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-input > label{
+  font-size: 20px;
+  color: grey;
+}
+.form-button{
+  margin: 20px 0px 0px 120px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: grey;
+  cursor: pointer;
+}
+.home-button{
+  padding: 10px;
+  background-color: red;
+  border-radius: 10px;
+  margin-left: 30px;
+  cursor: pointer;
+  font-size: 15px;
+}
+.home-button:hover{
+  padding:10px ;
+  background-color: grey;
+  font-size: 20px;
+  transition: 0.5s;
+}
+.signup-button{
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: grey;
+  cursor: pointer;
 }
